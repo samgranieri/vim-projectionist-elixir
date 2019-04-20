@@ -1,10 +1,10 @@
 {
-  "lib/*.ex": {
+  "apps/*/lib/*/*.ex": {
     "type":      "src",
-    "alternate": "test/{}_test.exs"
+    "alternate": "apps/*/test/*/*_test.exs"
   },
-  "test/*_test.exs": {
+  "apps/*/test/*/*_test.exs": {
     "type":      "test",
-    "alternate": "lib/{}.ex"
+    "alternate": "apps/*/lib/*/*.ex"
   }
 }
